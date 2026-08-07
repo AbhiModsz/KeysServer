@@ -25,7 +25,7 @@ personally — for the latest builds, always check the Telegram channel first.
 | 😈 Devil May Cry: Peak of Combat | Active |
 | 🦾 Mech Arena | Active |
 
-## 🔑 **[Get Access]**(https://abhimodsz.github.io/KeysServer)
+## 🔑 [Get Access](https://abhimodsz.github.io/KeysServer)
 
 Mod menu keys are generated through the site linked in the **About** section above.
 Open the site → tap **Get Key** → follow the steps to unlock access.

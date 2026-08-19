@@ -115,6 +115,8 @@
   /* GET KEY - hero button */
   .key-zone{
     display:flex; justify-content:center;
+    gap:18px;
+    flex-wrap:wrap;
     margin:36px 0 10px;
   }
   .key-btn{
@@ -122,8 +124,8 @@
     display:inline-flex;
     align-items:center;
     gap:12px;
-    padding:20px 46px;
-    font-size:19px;
+    padding:20px 40px;
+    font-size:17px;
     font-weight:800;
     letter-spacing:1.5px;
     text-transform:uppercase;
@@ -137,6 +139,11 @@
     transition:transform 0.25s ease;
   }
   .key-btn:hover{ transform:translateY(-4px) scale(1.03); }
+  .key-btn.discord{
+    background:linear-gradient(90deg, #5865F2, #7b2ff7, #5865F2);
+    background-size:300% auto;
+    color:#fff;
+  }
   @keyframes keyPulse{
     0%,100%{ box-shadow:0 0 20px rgba(0,240,255,0.45), 0 0 40px rgba(255,0,200,0.25); }
     50%{ box-shadow:0 0 34px rgba(0,240,255,0.75), 0 0 60px rgba(255,0,200,0.45); }
@@ -238,6 +245,10 @@
   .yt .icon-circle{ background:linear-gradient(135deg,#ff0058,#c40057); }
   .yt:hover{ box-shadow:0 8px 26px rgba(255,0,90,0.35); }
 
+  .dc{ background:linear-gradient(135deg, rgba(88,101,242,0.18), rgba(123,47,247,0.08)); }
+  .dc .icon-circle{ background:linear-gradient(135deg,#5865F2,#3a41a3); }
+  .dc:hover{ box-shadow:0 8px 26px rgba(88,101,242,0.35); }
+
   footer{
     text-align:center;
     margin-top:60px;
@@ -266,9 +277,11 @@
   </header>
 
   <div class="key-zone">
-    <!-- EDIT THIS LINK: change href="#" to your actual key/shortlink URL -->
-    <a href="https://t.me/AutoKeyGenBot?start" class="key-btn" id="getKeyBtn">
-      <span class="icon">🔑</span> Get Key
+    <a href="https://t.me/AutoKeyGenBot?start" class="key-btn" id="getKeyBtnTG">
+      <span class="icon">🔑</span> Get Key (Telegram)
+    </a>
+    <a href="https://discord.com/oauth2/authorize?client_id=1539543365056729158" class="key-btn discord" id="getKeyBtnDC">
+      <span class="icon">🔑</span> Get Key (Discord)
     </a>
   </div>
   <p class="key-note">Tap above to generate your access key</p>
@@ -311,6 +324,10 @@
     <a class="social-btn yt" href="https://youtube.com/@abhimods" target="_blank" rel="noopener">
       <span class="icon-circle">▶️</span>
       <span class="label">YouTube<small>Tutorials & mods</small></span>
+    </a>
+    <a class="social-btn dc" href="https://discord.gg/79s9qkwz3F" target="_blank" rel="noopener">
+      <span class="icon-circle">🎮</span>
+      <span class="label">Discord Server<small>Community & support</small></span>
     </a>
   </div>
 

@@ -119,6 +119,12 @@
     flex-wrap:wrap;
     margin:36px 0 10px;
   }
+  .key-pair{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:10px;
+  }
   .key-btn{
     position:relative;
     display:inline-flex;
@@ -149,6 +155,30 @@
     50%{ box-shadow:0 0 34px rgba(0,240,255,0.75), 0 0 60px rgba(255,0,200,0.45); }
   }
   .key-btn .icon{ font-size:22px; }
+
+  /* tutorial buttons */
+  .tut-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    padding:10px 20px;
+    font-size:12.5px;
+    font-weight:700;
+    letter-spacing:0.8px;
+    text-transform:uppercase;
+    color:var(--text);
+    text-decoration:none;
+    border-radius:999px;
+    border:1px solid rgba(255,0,88,0.5);
+    background:rgba(255,0,88,0.1);
+    transition:transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  }
+  .tut-btn:hover{
+    transform:translateY(-2px);
+    background:rgba(255,0,88,0.22);
+    box-shadow:0 6px 18px rgba(255,0,88,0.35);
+  }
+  .tut-btn .icon{ font-size:15px; }
 
   .key-note{
     text-align:center;
@@ -277,12 +307,22 @@
   </header>
 
   <div class="key-zone">
-    <a href="https://t.me/AutoKeyGenBot?start" class="key-btn" id="getKeyBtnTG">
-      <span class="icon">🔑</span> Get Key (Telegram)
-    </a>
-    <a href="https://discord.com/oauth2/authorize?client_id=1539543365056729158" class="key-btn discord" id="getKeyBtnDC">
-      <span class="icon">🔑</span> Get Key (Discord)
-    </a>
+    <div class="key-pair">
+      <a href="https://t.me/AutoKeyGenBot?start" class="key-btn" id="getKeyBtnTG">
+        <span class="icon">🔑</span> Get Key (Telegram)
+      </a>
+      <a href="https://youtu.be/oR89rNnDSmM?si=ims8LSIZG9XuvK3E" class="tut-btn" target="_blank" rel="noopener">
+        <span class="icon">▶️</span> How To Get From Telegram
+      </a>
+    </div>
+    <div class="key-pair">
+      <a href="https://discord.com/oauth2/authorize?client_id=1539543365056729158" class="key-btn discord" id="getKeyBtnDC">
+        <span class="icon">🔑</span> Get Key (Discord)
+      </a>
+      <a href="https://youtu.be/YO1D2lu45GQ?si=09qJb5DiyscDec9E" class="tut-btn" target="_blank" rel="noopener">
+        <span class="icon">▶️</span> How To Get From Discord
+      </a>
+    </div>
   </div>
   <p class="key-note">Tap above to generate your access key</p>
 
